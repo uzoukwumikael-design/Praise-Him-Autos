@@ -21,3 +21,7 @@ Any VPS or a host with a persistent disk (Railway, Render, Fly, a Lagos VPS) beh
 
 ## Test
     npm test
+
+## Vercel (demo only)
+Vercel's disk is temporary, so on Vercel the data lives in /tmp and RESETS on cold starts (cars, photos, enquiries vanish).
+Use it only to show a demo; set env vars ADMIN_PASSWORD and Node 22.x. For the real client use Render, Railway or Fly with a persistent disk mounted at ./data (or set DATA_DIR).
